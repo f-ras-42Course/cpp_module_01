@@ -6,11 +6,11 @@
 #    By: fras <fras@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/05/03 21:09:45 by fras          #+#    #+#                  #
-#    Updated: 2024/05/03 21:13:33 by fras          ########   odam.nl          #
+#    Updated: 2024/05/04 17:28:18 by fras          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brainz
+NAME = zombie
 CC = c++
 CFLAGS = -Werror -Wextra -Wall
 INCLUDE = -I include
