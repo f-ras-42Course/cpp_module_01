@@ -6,7 +6,16 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/04 14:24:10 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/04 14:24:17 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/04 17:22:02 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
+Zombie::Zombie(/* args */)
+{
+}
+
+Zombie::~Zombie()
+{
+}
