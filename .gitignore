@@ -5,5 +5,7 @@
 *.o
 *.dSYM
 test
+
 zombie
 brain
+violence
