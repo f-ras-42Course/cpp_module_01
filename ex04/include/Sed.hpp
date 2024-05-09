@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 21:54:28 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 21:58:01 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 class Sed
 {
 	private:
-		std::ifstream myfile_;
+		std::ifstream inputfile_;
 		std::string line_;
 		std::string	filecontents_;
 	public:
