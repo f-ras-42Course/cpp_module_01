@@ -6,11 +6,13 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 18:35:28 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 19:43:46 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
+
+# define TEST 
 
 Sed::Sed(const std::string filename)
 : myfile_(filename)
@@ -21,16 +23,9 @@ Sed::Sed(const std::string filename)
 		throw \
 			std::invalid_argument("can't read " + filename + ": No such file");
 	}
-	std::cout << "succesfully opened\n" << std::endl;
 }
 
 Sed::~Sed()
 {
 	std::cout << "Deconstructor called! \n";
 }
-
-
-// const std::string& Sed::getFilename()
-// {
-// 	return (filename_);
-// }
