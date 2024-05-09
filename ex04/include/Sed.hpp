@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 19:45:18 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 19:49:36 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ class Sed
 		const std::string& getFilename();
 };
 
-void controlArgumentCount(int argc);
+void guardArgumentCount(int argc);
 
 #endif

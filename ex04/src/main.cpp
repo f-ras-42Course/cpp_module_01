@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:22:58 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 19:45:46 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 19:49:23 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int argc, char *argv[])
 {
 	try
 	{
-		controlArgumentCount(argc);
+		guardArgumentCount(argc);
 		Sed sed(argv[1]);
 	}
 	catch(const std::exception& e)
