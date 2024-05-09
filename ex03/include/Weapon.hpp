@@ -6,15 +6,15 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/08 14:48:51 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/08 18:41:10 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 10:45:44 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
-#include <iostream>
-#include <string>
+# include <iostream>
+# include <string>
 
 class Weapon
 {

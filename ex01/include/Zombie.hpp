@@ -6,15 +6,15 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/04 14:47:09 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/07 19:51:42 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 10:45:54 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
 
-#include <iostream>
-#include <string>
+# include <iostream>
+# include <string>
 
 class Zombie
 {
