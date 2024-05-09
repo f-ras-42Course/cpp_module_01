@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 19:53:53 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 21:03:26 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@
 class Sed
 {
 	private:
-		std::fstream myfile_;
+		std::ifstream myfile_;
+		std::string	filecontents_;
 	public:
 		Sed(const std::string filename);
 	    ~Sed();
+		// void setFileContents(std::string filecontents);
 };
 
 void guardArgumentCount(int argc);
