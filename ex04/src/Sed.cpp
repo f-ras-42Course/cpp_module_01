@@ -6,20 +6,16 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 17:40:50 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 18:35:28 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
 
-Sed::Sed(int argc, const std::string filename)
+Sed::Sed(const std::string filename)
 : myfile_(filename)
 {
 	std::cout << "Constructor called for " << filename << "! \n";
-	if (argc != 4)
-	{
-		throw std::invalid_argument("invalid number of arguments");
-	}
 	if (!myfile_.is_open())
 	{
 		throw \
