@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 19:43:46 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 19:55:41 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ Sed::Sed(const std::string filename)
 
 Sed::~Sed()
 {
-	std::cout << "Deconstructor called! \n";
+	std::cout << "Deconstructor called!\n";
 }
