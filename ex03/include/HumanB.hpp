@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/08 14:48:51 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 10:44:48 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 10:46:52 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ class HumanB
 	private:
 		std::string name_;
 		Weapon* weapon_;
-
 	public:
    		HumanB(std::string name);
 		~HumanB();

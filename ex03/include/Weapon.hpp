@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/08 14:48:51 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 10:45:44 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 10:46:55 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class Weapon
 {
 	private:
 		std::string type_;
-
 	public:
    		Weapon(std::string type);
 		~Weapon();

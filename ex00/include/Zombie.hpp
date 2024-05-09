@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/04 14:47:09 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 10:46:02 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 10:47:11 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ class Zombie
 {
 	private:
 		std::string	name_;
-
 	public:
 		Zombie(std::string name);
 		~Zombie();
