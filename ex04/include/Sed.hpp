@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/09 21:58:01 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/09 22:34:46 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 # include <iostream>
 # include <fstream>
 # include <string>
+# include <sstream>
 
 class Sed
 {
 	private:
 		std::ifstream inputfile_;
-		std::string line_;
 		std::string	filecontents_;
 	public:
 		Sed(const std::string filename);
