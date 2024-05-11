@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/11 10:49:45 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/11 17:58:23 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,17 @@ Sed::Sed(const std::string filename)
 Sed::~Sed()
 {
 	std::cout << "Deconstructor called!\n";
+}
+
+std::string Sed::replace(std::string to_change, std::string substitude)
+{	
+	size_t pos = filecontents_.find(to_change);
+
+	while ((pos != std::string::npos))
+	{
+		filecontents_.erase(pos, to_change.length());
+		filecontents_.insert(pos, substitude);
+		pos = filecontents_.find(to_change);
+	}
+	return (filecontents_);
 }
