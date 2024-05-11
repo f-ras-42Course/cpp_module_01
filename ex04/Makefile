@@ -6,7 +6,7 @@
 #    By: fras <fras@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/05/08 14:49:14 by fras          #+#    #+#                  #
-#    Updated: 2024/05/09 17:34:27 by fras          ########   odam.nl          #
+#    Updated: 2024/05/11 18:22:24 by fras          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CFLAGS = -Werror -Wextra -Wall
 INCLUDE = -I include
 SRC_DIR = src
 OBJ_DIR = obj
-SOURCES = $(shell find $(SRC_DIR)/ -type f -name "*.cpp")
+SOURCES = $(shell find $(SRC_DIR) -type f -name "*.cpp")
 OBJECTS = $(patsubst $(SRC_DIR)/%,$(OBJ_DIR)/%,$(SOURCES:%.cpp=%.o))
 RM = rm -f
 
