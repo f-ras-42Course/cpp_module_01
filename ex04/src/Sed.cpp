@@ -6,15 +6,12 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/11 17:58:23 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/11 17:59:15 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
 
-// Sed::Sed(const std::string filename, const std::string to_replace,\
-// 		const std::string replace_with)
-// : inputfile_(filename), to_replace_(to_replace), replace_with_(replace_with)
 Sed::Sed(const std::string filename)
 : inputfile_(filename)
 {
