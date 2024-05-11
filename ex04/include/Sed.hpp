@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/11 18:19:49 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/11 23:04:35 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ class Sed
 	    ~Sed();
 		void replace(const std::string& to_change, \
 						const std::string& substitude);
+		void writeOutfile(const std::string& filename);
+		const std::string& getFilecontents();
 };
 void guardArgumentCount(int argc);
 
