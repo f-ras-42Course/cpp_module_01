@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:20:22 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/11 16:49:58 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/11 18:19:49 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,10 @@ class Sed
 		std::ifstream	inputfile_;
 		std::string		filecontents_;
 	public:
-		Sed(const std::string filename);
+		Sed(const std::string& filename);
 	    ~Sed();
-		std::string replace(std::string to_change, std::string substitude);
+		void replace(const std::string& to_change, \
+						const std::string& substitude);
 };
 void guardArgumentCount(int argc);
 
