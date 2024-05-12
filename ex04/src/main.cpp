@@ -6,12 +6,11 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/09 10:22:58 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/11 23:12:07 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/12 08:58:24 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
-#include <string>
 
 int	main(int argc, char *argv[])
 {
