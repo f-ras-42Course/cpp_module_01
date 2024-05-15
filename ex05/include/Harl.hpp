@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:28 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/14 19:08:21 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/15 18:12:04 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ private:
 	void warning(void);
 	void error(void);
 public:
-	Harl(/* args */);
-	~Harl();
 	void complain(std::string level);
 };
 
