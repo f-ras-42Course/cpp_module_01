@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/15 19:57:39 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/15 20:01:35 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void Harl::error(void)
 void Harl::complain(std::string level)
 {
 	typedef void (Harl::*HarlMemFn)(void);
+	
 	HarlMemFn functions[] = {
 	['D'] = &Harl::debug,
 	['I'] = &Harl::info,
