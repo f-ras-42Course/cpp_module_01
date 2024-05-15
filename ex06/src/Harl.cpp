@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/15 20:51:12 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/15 21:12:14 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,36 +38,47 @@ void Harl::error(void)
 	std::cout << "This is unacceptable! I want to speak to the manager now.\n";
 }
 
+void Harl::nothing(void)
+{
+	std::cout << "[ Probably complaining about insignificant problem ] \n";
+}
+
+
 void Harl::setStatus(std::string level)
 {
 	if (level == "DEBUG")
 	{
-		/* code */
+		what_ = DEBUG;
 	}
-	if (/* condition */)
+	if (level == "INFO")
 	{
-		/* code */
+		what_ = INFO;
 	}
-	
-	return ;
+	if (level == "WARNING")
+	{
+		what_ = WARNING;
+	}
+	if (level == "ERROR")
+	{
+		what_ = ERROR;
+	}
 }
 
-void Harl::complain(What level)
+void Harl::complain()
 {
-	(void)level;
-	// typedef void (Harl::*HarlMemFn)(void);
-	
-	// HarlMemFn functions[] = {&Harl::debug, &Harl::info, \
-	// 						&Harl::warning, &Harl::error};
-	
-	// switch (What_)
-	// {
-	// case /* constant-expression */:
-	// 	/* code */
-	// 	break;
-	
-	// default:
-	// 	break;
-	// }
-	// (this->*functions[(unsigned int)first_char])();
+	switch (what_)
+	{
+		default:
+			nothing();
+			break;
+		case DEBUG:
+			debug();
+		case INFO:
+			info();
+		case WARNING:
+			warning();
+		case ERROR:
+			error();
+	}
+	return ;
 }

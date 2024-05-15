@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:28 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/15 20:47:56 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/15 21:04:53 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@ private:
 		WARNING,
 		ERROR
 	};
+	What what_;
 	void debug(void);
 	void info(void);
 	void warning(void);
 	void error(void);
+	void nothing(void);
 public:
-	void complain(What level);
+	void complain();
 	void setStatus(std::string level);
 };
 
