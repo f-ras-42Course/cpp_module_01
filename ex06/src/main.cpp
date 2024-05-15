@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:24 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/15 21:11:53 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/15 21:20:36 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,4 @@ int main(int argc, char *argv[])
 		return 0;
 	harl.setStatus(argv[1]);
 	harl.complain();
-	// std::cout << "test\n" << argv[1] << '\n';
 }
