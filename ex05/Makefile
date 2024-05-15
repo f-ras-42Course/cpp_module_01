@@ -6,7 +6,7 @@
 #    By: fras <fras@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/05/14 18:50:54 by fras          #+#    #+#                  #
-#    Updated: 2024/05/15 18:48:58 by fras          ########   odam.nl          #
+#    Updated: 2024/05/15 18:51:35 by fras          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,7 @@ CPP98:
 	$(MAKE) CPP98=1
 
 NOUNUSED:
-	$(MAKE) CPP98=1
+	$(MAKE) NOUNUSED=1
 
 # Info Message
 message:
