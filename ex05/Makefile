@@ -6,7 +6,7 @@
 #    By: fras <fras@student.codam.nl>                 +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/05/14 18:50:54 by fras          #+#    #+#                  #
-#    Updated: 2024/05/14 18:50:55 by fras          ########   odam.nl          #
+#    Updated: 2024/05/15 18:48:58 by fras          ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,11 @@ endif
 
 ifdef CPP98
 CFLAGS += -std=c++98
+endif
+
+ifdef NOUNUSED
+CFLAGS += -Wno-unused-value -Wunused-value 
+CFLAGS += -Wno-unused-variable -Wno-unused-parameter
 endif
 
 # Targets
@@ -74,6 +79,9 @@ fsan:
 resan: fclean fsan
 
 CPP98:
+	$(MAKE) CPP98=1
+
+NOUNUSED:
 	$(MAKE) CPP98=1
 
 # Info Message
