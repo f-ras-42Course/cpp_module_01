@@ -6,7 +6,7 @@
 /*   By: fras <fras@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/14 18:51:26 by fras          #+#    #+#                 */
-/*   Updated: 2024/05/15 20:01:35 by fras          ########   odam.nl         */
+/*   Updated: 2024/05/18 16:01:18 by fras          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,15 +42,26 @@ void Harl::complain(std::string level)
 {
 	typedef void (Harl::*HarlMemFn)(void);
 	
-	HarlMemFn functions[] = {
-	['D'] = &Harl::debug,
-	['I'] = &Harl::info,
-	['W'] = &Harl::warning,
-	['E'] = &Harl::error};
-	const char &first_char = level[0];
-	
+	HarlMemFn function;
 	if (level != "DEBUG" && level != "INFO" && level != "WARNING" \
 		&& level != "ERROR")
 		return ;
-	(this->*functions[(unsigned int)first_char])();
+	switch (level[0])
+	{
+		case 'D':
+			function = &Harl::debug;
+			break;
+		case 'I':
+			function = &Harl::info;
+			break;
+		case 'W':
+			function = &Harl::warning;
+			break;
+		case 'E':
+			function = &Harl::error;
+			break;
+		default:
+			return;
+	}
+	(this->*function)();
 }
